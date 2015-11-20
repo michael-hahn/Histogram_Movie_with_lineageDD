@@ -3,6 +3,7 @@
  */
 
 import java.util.StringTokenizer
+import java.util.logging.{Level, Logger, FileHandler, LogManager}
 
 import org.apache.spark.api.java.JavaRDD
 import scala.sys.process._
@@ -17,7 +18,10 @@ import java.io._
 
 class Test extends userTest[String] {
 
-  def usrTest(inputRDD: JavaRDD[String]): Boolean = {
+  def usrTest(inputRDD: JavaRDD[String], lm: LogManager, fh: FileHandler): Boolean = {
+    val logger: Logger = Logger.getLogger(classOf[Test].getName);
+    lm.addLogger(logger)
+    logger.addHandler(fh)
     var returnValue = false;
     val spw = new sparkOperations()
     val result = spw.sparkWorks(inputRDD)
@@ -34,6 +38,7 @@ class Test extends userTest[String] {
       val bin :Float = token.nextToken().toFloat
       val number :Integer = token.nextToken().toInt
       truthList += (bin -> number)
+      //logger.log(Level.INFO, "TruthList[" + (truthList.size - 1) + "]: " + bin + " : "+ number)
     }
 
 
@@ -41,10 +46,11 @@ class Test extends userTest[String] {
     while (itr.hasNext) {
       val tupVal = itr.next()
       if (tupVal._1 != 0.0f) {
-        val binName = tupVal._1
-        val num = tupVal._2
+        val binName = tupVal._1.toFloat
+        val num = tupVal._2.toInt
+        //logger.log(Level.INFO, "Output: " + binName + " : " + num)
         if (truthList.contains(binName)) {
-          if (num != truthList.get(binName)){
+          if (num != truthList.get(binName).get){
             returnValue = true
           }
         } else returnValue = true

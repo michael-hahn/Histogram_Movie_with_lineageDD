@@ -1,9 +1,15 @@
 /**
  * Created by Michael on 11/12/15.
  */
+
+import java.util.logging.{Level, Logger, FileHandler, LogManager}
+
+//import _root_.Histogram_Movies._
 import org.apache.spark.api.java.JavaRDD
 import java.util.ArrayList
 import java.util.List
+
+
 //remove if not needed
 import scala.collection.JavaConversions._
 import scala.util.control.Breaks._
@@ -15,12 +21,17 @@ class DD[T] {
     splitFunc.usrSplit(inputRDD, numberOfPartitions)
   }
 
-  def test(inputRDD: JavaRDD[T], testFunc: userTest[T]): Boolean = testFunc.usrTest(inputRDD)
+  def test(inputRDD: JavaRDD[T], testFunc: userTest[T], lm: LogManager, fh: FileHandler): Boolean = testFunc.usrTest(inputRDD, lm, fh)
 
   private def dd_helper(inputRDD: JavaRDD[T],
                         numberOfPartitions: Int,
                         testFunc: userTest[T],
-                        splitFunc: userSplit[T]) {
+                        splitFunc: userSplit[T],
+                         lm: LogManager,
+                         fh: FileHandler) {
+    val logger: Logger = Logger.getLogger(getClass.getName)
+    logger.addHandler(fh)
+
     var rdd = inputRDD
     var partitions = numberOfPartitions
     var runTime = 1
@@ -29,15 +40,28 @@ class DD[T] {
     failing_stack.add(0, new SubRDD[T](rdd, partitions, bar_offset))
     while (!failing_stack.isEmpty) {
       breakable {
+        val startTime: Long = System.nanoTime
         val subrdd = failing_stack.remove(0)
         rdd = subrdd.rdd
+        //Count size
+        val sizeRdd = rdd.count
         bar_offset = subrdd.bar
         partitions = subrdd.partition
-        val assertResult = test(rdd, testFunc)
-        if (!assertResult) break
+        val assertResult = test(rdd, testFunc, lm, fh)
+        if (!assertResult) {
+          logger.log(Level.INFO, "The #" + runTime + " run is done")
+          val endTime: Long = System.nanoTime
+          logger.log(Level.INFO, "This run takes " + (endTime - startTime) /1000 + " milliseconds")
+          logger.log(Level.INFO, "Data size is " + sizeRdd)
+          break
+        }
         if (rdd.count() <= 1) {
-          println("DD: Done, RDD only holds one line")
-          println("Delta Debugged Error inducing inputs: " + rdd.collect())
+          //Cannot further split RDD
+          logger.log(Level.INFO, "The #" + runTime + " run is done")
+          logger.log(Level.INFO, "RDD Only Holds One Line - End of This Branch of Search")
+          logger.log(Level.WARNING, "Delta Debugged Error inducing inputs: " + rdd.collect)
+          val endTime: Long = System.nanoTime
+          logger.log(Level.INFO, "This run takes " + (endTime - startTime) / 1000 + " milliseconds")
           break
         }
         println("Spliting now...")
@@ -53,7 +77,7 @@ class DD[T] {
         }
         for (i <- 0 until partitions) {
           println("Testing subRDD id:" + rddList(i).id)
-          val result = test(rddList(i), testFunc)
+          val result = test(rddList(i), testFunc, lm, fh)
           println("Testing is done")
           if (result) {
             rdd_failed = true
@@ -66,7 +90,7 @@ class DD[T] {
           for (j <- 0 until partitions) {
             val i = (j + bar_offset) % partitions
             val rddBar = rdd.subtract(rddList(i))
-            val result = test(rddBar, testFunc)
+            val result = test(rddBar, testFunc, lm, fh)
             if (result) {
               rddBar_failed = true
               next_rdd = next_rdd.intersection(rddBar)
@@ -78,8 +102,11 @@ class DD[T] {
         }
         if (!rdd_failed && !rddBar_failed) {
           if (rdd.count() <= 2) {
-            println("DD: Done, RDD only holds one line")
-            println("Delta Debugged Error inducing inputs: " + rdd.collect())
+            logger.log(Level.INFO, "The #" + runTime + " run is done")
+            logger.log(Level.INFO, "End of This Branch of Search")
+            logger.log(Level.WARNING, "Delta Debugged Error inducing inputs: " + rdd.collect)
+            val endTime: Long = System.nanoTime
+            logger.log(Level.INFO, "This run takes " + (endTime - startTime)/1000 + " milliseconds")
             break
           }
           next_partitions = Math.min(rdd.count().toInt, partitions * 2)
@@ -88,13 +115,15 @@ class DD[T] {
         }
         partitions = next_partitions
         runTime = runTime + 1
-        println("Finish one loop of dd")
+        val endTime: Long = System.nanoTime
+        logger.log(Level.INFO, "This run takes " + (endTime - startTime)/1000 + " milliseconds")
+        logger.log(Level.INFO, "Data size is " + sizeRdd)
+
       }
     }
   }
-
-  def ddgen(inputRDD: JavaRDD[T], testFunc: userTest[T], splitFunc: userSplit[T]) {
-    dd_helper(inputRDD, 2, testFunc, splitFunc)
+  def ddgen(inputRDD: JavaRDD[T], testFunc: userTest[T], splitFunc: userSplit[T], lm: LogManager, fh: FileHandler) {
+    dd_helper(inputRDD, 2, testFunc, splitFunc, lm, fh)
   }
 }
 

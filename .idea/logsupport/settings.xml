@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LogSupport">
+    <option name="logConfigurations">
+      <ProjectLogConfigurations>
+        <option name="defaultLogConfiguration">
+          <DefaultLogConfiguration>
+            <option name="conditionalLogLevels">
+              <set>
+                <option value="info" />
+                <option value="warn" />
+                <option value="error" />
+              </set>
+            </option>
+            <option name="defaultFrameworkName" value="slf4j" />
+            <option name="logIdName" value="&lt;html&gt;&lt;i&gt;Disabled&lt;/i&gt;&lt;/html&gt;" />
+          </DefaultLogConfiguration>
+        </option>
+      </ProjectLogConfigurations>
+    </option>
+  </component>
+</project>
