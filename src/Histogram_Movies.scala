@@ -163,11 +163,8 @@ object Histogram_Movies {
       //      linRdd = counts.getLineage()
       //      linRdd.collect
       //    }
-      linRdd = linRdd.filter {
-        result(0)
-      }
+      linRdd = linRdd.filter{c => result.contains(c)}
       linRdd = linRdd.goBackAll()
-      linRdd.collect
       linRdd.show.collect().foreach(s => {
         pw.append(s.toString)
         pw.append('\n')

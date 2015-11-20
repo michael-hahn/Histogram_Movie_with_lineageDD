@@ -1,0 +1,200 @@
+Nov 19, 2015 4:44:05 PM Histogram_Movies$ main
+INFO: Lineage caught 1979 records to run delta-debugging
+Nov 19, 2015 4:44:15 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 9940365 milliseconds
+Nov 19, 2015 4:44:15 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 1979
+Nov 19, 2015 4:44:24 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 9158250 milliseconds
+Nov 19, 2015 4:44:24 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 965
+Nov 19, 2015 4:44:32 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 8097659 milliseconds
+Nov 19, 2015 4:44:32 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 457
+Nov 19, 2015 4:44:40 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 8465170 milliseconds
+Nov 19, 2015 4:44:40 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 240
+Nov 19, 2015 4:44:48 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7943570 milliseconds
+Nov 19, 2015 4:44:48 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 114
+Nov 19, 2015 4:44:58 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 9956892 milliseconds
+Nov 19, 2015 4:44:58 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 58
+Nov 19, 2015 4:45:07 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 8297580 milliseconds
+Nov 19, 2015 4:45:07 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 27
+Nov 19, 2015 4:45:15 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 8177847 milliseconds
+Nov 19, 2015 4:45:15 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 12
+Nov 19, 2015 4:45:23 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 8166891 milliseconds
+Nov 19, 2015 4:45:23 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 4
+Nov 19, 2015 4:45:31 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7703807 milliseconds
+Nov 19, 2015 4:45:31 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 3
+Nov 19, 2015 4:45:38 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7689117 milliseconds
+Nov 19, 2015 4:45:38 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 2
+Nov 19, 2015 4:45:46 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7513068 milliseconds
+Nov 19, 2015 4:45:46 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 2
+Nov 19, 2015 4:45:48 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: The #13 run is done
+Nov 19, 2015 4:45:48 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: RDD Only Holds One Line - End of This Branch of Search
+Nov 19, 2015 4:45:49 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+WARNING: Delta Debugged Error inducing inputs: [648:66358_3,251535_4,2625420_2,2044715_4,1805888_3,290215_3,1553281_3,240214_3,672681_3,1575921_4,606578_3,1569773_5,2330822_3,1013887_4,2319785_3,1489566_3,1858089_4,314083_4,1002117_3,578490_5,1153254_4,2348951_4,2271436_3,2489966_4,727242_1,2374556_3,1205946_1,633517_5,176067_4,2608352_3,214901_5,2353423_3,2439493_1,1939333_5,1779504_5,2082428_3,1953517_4,1563935_1,1407956_4,2441692_1,657356_4,2141497_5,1531029_1,2127716_5,1257998_4,455707_2,3597_5,2338019_4,1903324_1,1009333_3,170600_2,1777406_1,2567556_2,769702_1,2091054_2,2539814_4,2108535_5,2457095_1,1692448_5,1374216_1,2173344_3,1295722_3,1385788_1,2417958_4,1492360_4,783329_5,364140_3,1211659_4,765225_5,507603_1,2230286_5,586343_5,1451406_3,337545_4,1326745_3,470390_2,912261_5,274191_4,266665_4,416543_5,1664010_4,2279472_5,1097485_5,2318070_4,438482_4,122197_5,189387_4,747796_5,46920_2,1245143_5,1203959_3,854949_3,2291306_1,504738_5,2230686_2,2518168_4,1619197_5,2165079_5,1435213_4,1523975_5,2256485_1,731106_2,925495_3,2340450_4,1233925_4,1374909_3,1281611_4,146191_4,2034780_3,1252151_3,1615182_5,83521_5,2035984_3,185689_3,305344_2,754956_4,1411009_5,366233_1,2525134_3,1032391_4,2647334_5,728361_3,439487_4,2169517_5,517921_3,2155019_5,2363842_3,2232911_3,1107588_1,620146_5,1086916_3,800866_5,1252887_5,22096_5,296232_2,1115451_4,312008_4,695209_4,491188_3,1086272_2,326993_1,387418_1,2011946_5,2362264_2,2437675_4,2594773_4,1486829_5,881939_3,204273_4,1860235_5,1878022_5,1074402_5,1910747_4,1033930_3,1652073_4,430605_4,972313_5,1084611_4,930131_5,2514634_3,2039727_4,515436_1,1311573_3,102442_4,1305660_4,1535324_5,742581_3,1714427_4,1295702_3,2074015_4]
+Nov 19, 2015 4:45:49 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 2610267 milliseconds
+Nov 19, 2015 4:45:56 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7753455 milliseconds
+Nov 19, 2015 4:45:56 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 126
+Nov 19, 2015 4:46:04 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7489948 milliseconds
+Nov 19, 2015 4:46:04 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 63
+Nov 19, 2015 4:46:11 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7374438 milliseconds
+Nov 19, 2015 4:46:11 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 35
+Nov 19, 2015 4:46:19 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7548722 milliseconds
+Nov 19, 2015 4:46:19 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 21
+Nov 19, 2015 4:46:26 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7643143 milliseconds
+Nov 19, 2015 4:46:26 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 13
+Nov 19, 2015 4:46:34 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7498454 milliseconds
+Nov 19, 2015 4:46:34 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 10
+Nov 19, 2015 4:46:41 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7514642 milliseconds
+Nov 19, 2015 4:46:41 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 6
+Nov 19, 2015 4:46:44 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: The #20 run is done
+Nov 19, 2015 4:46:44 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: RDD Only Holds One Line - End of This Branch of Search
+Nov 19, 2015 4:46:44 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+WARNING: Delta Debugged Error inducing inputs: [787:1767188_4,2030845_5,2187474_5,1130717_3,178211_4,1222598_4,594944_3,247940_1,162925_2,1145956_2,1180812_3,2320264_2,2439493_1,2461289_5,70868_2,953430_2,1558299_3,409574_3,101068_2,2136927_3,670204_4,2591704_3,1589248_3,2055810_2,1303867_1,1664010_3,756560_4,2141183_2,1838160_3,2212303_3,2080822_2,2470428_3,1810534_4,1600259_3,1508644_4,94453_4,1025458_4,1264021_1,1124113_3,1252029_2,2613090_3,1954061_1,2644423_2,1335241_1,1472020_2,305344_1,2360906_1,1340872_2,58310_3,1237752_4,2149643_2,775605_1,529629_4,936816_1,1468286_1,2264638_1,934230_3,1233754_3,1232888_3,1188445_1,2118461_3,1574397_2,387418_2,1926723_1,1932594_1,2185936_2,311080_2,305727_1,1663888_3,498902_3,499789_2,1453265_2,1129884_1,1639792_1,1151896_2,1924510_3,1201442_1,1610456_5,2443373_1,1274826_2,1743715_4,2448838_4]
+Nov 19, 2015 4:46:44 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 2589869 milliseconds
+Nov 19, 2015 4:46:53 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 9270089 milliseconds
+Nov 19, 2015 4:46:53 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 1014
+Nov 19, 2015 4:47:01 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7745244 milliseconds
+Nov 19, 2015 4:47:01 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 494
+Nov 19, 2015 4:47:09 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7611556 milliseconds
+Nov 19, 2015 4:47:09 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 231
+Nov 19, 2015 4:47:16 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7603848 milliseconds
+Nov 19, 2015 4:47:16 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 120
+Nov 19, 2015 4:47:24 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7740882 milliseconds
+Nov 19, 2015 4:47:24 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 53
+Nov 19, 2015 4:47:32 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 8409372 milliseconds
+Nov 19, 2015 4:47:32 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 31
+Nov 19, 2015 4:47:41 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 8384746 milliseconds
+Nov 19, 2015 4:47:41 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 15
+Nov 19, 2015 4:47:49 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7969738 milliseconds
+Nov 19, 2015 4:47:49 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 6
+Nov 19, 2015 4:47:56 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7526171 milliseconds
+Nov 19, 2015 4:47:56 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 3
+Nov 19, 2015 4:48:04 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7868741 milliseconds
+Nov 19, 2015 4:48:04 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 2
+Nov 19, 2015 4:48:07 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: The #30 run is done
+Nov 19, 2015 4:48:07 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: RDD Only Holds One Line - End of This Branch of Search
+Nov 19, 2015 4:48:07 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+WARNING: Delta Debugged Error inducing inputs: [1057:568620_5,1901597_4,826931_5,222153_2,516926_3,303948_3,2417423_3,1131364_5,968447_3,1227322_2,541870_3,370828_3,2361239_5,716874_3,912093_3,2319621_4,1567202_1,771136_4,2582367_5,370257_4,1314869_3,1792741_2,2615728_5,636262_1,318609_4,1953981_4,2439493_1,1303483_2,1746603_5,2061329_3,1563935_1,1169781_5,1509725_4,2263361_5,1269538_2,231349_3,1300687_3,381747_2,1670302_5,1062852_3,407037_3,2621945_4,1119113_4,769702_1,313060_3,894835_2,503441_2,1590648_4,94807_4,2503356_3,2354601_2,851602_4,1455081_4,1363673_4,1106241_1,983579_5,808372_5,81931_1,844391_2,976313_2,860520_3,1021760_5,2057545_4,92249_4,801590_4,2622948_3,1017160_3,1088899_1,883126_3,1725374_4,11756_5,41695_3,1173208_5,2488511_4,2023097_3,1036387_5,634183_2,2137962_5,369788_3,1844290_5,2555614_5,2370002_3,1627581_4,2413320_2,2278789_4,1043729_5,1007245_5,1099981_5,491531_5,182134_5,2606799_2,591064_3,2248675_3,1396361_3,1617915_5,2496042_5,1889005_1,391820_3,636824_3,2055622_5,675693_5,2532827_3,2339751_5,2317746_5,97895_4,1193964_4,887575_5,1339597_1,117687_1,1806202_5,1897490_5,305344_1,42218_3,728569_3,2036694_4,467400_3,1710658_3,290182_3,1632503_5,2147527_2,1358991_3,1178528_5,1463168_4,1571382_3,728361_1,1562707_1,504012_5,1160087_3,1532058_4,1442396_5,689836_3,2377425_5,1075444_3,326350_3,1107588_4,1421298_5,858124_4,1691103_4,1802098_2,662507_5,441361_5,1365399_4,1408743_4,1745399_5,1234567_5,77225_5,1692654_4,2118461_5,5256_1,411597_5,1155090_2,2243611_5,387418_1,1114324_3,1743431_3,893014_3,1698887_4,1317124_5,998059_3,1602153_3,982709_3,799838_4,133129_5,1719756_2,2136912_4,726310_4,1281882_3,582829_5,103565_4,1137159_3,361702_4,544804_2,1612901_2,2559507_4,2322240_4,2602754_4,2354069_2,2550924_4]
+Nov 19, 2015 4:48:07 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 2596172 milliseconds
+Nov 19, 2015 4:48:14 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7674519 milliseconds
+Nov 19, 2015 4:48:14 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 520
+Nov 19, 2015 4:48:22 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7776564 milliseconds
+Nov 19, 2015 4:48:22 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 260
+Nov 19, 2015 4:48:30 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7656049 milliseconds
+Nov 19, 2015 4:48:30 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 137
+Nov 19, 2015 4:48:37 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7592704 milliseconds
+Nov 19, 2015 4:48:37 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 72
+Nov 19, 2015 4:48:45 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7658729 milliseconds
+Nov 19, 2015 4:48:45 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 36
+Nov 19, 2015 4:48:53 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7640475 milliseconds
+Nov 19, 2015 4:48:53 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 18
+Nov 19, 2015 4:49:00 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7608350 milliseconds
+Nov 19, 2015 4:49:00 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 13
+Nov 19, 2015 4:49:09 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 8402711 milliseconds
+Nov 19, 2015 4:49:09 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 7
+Nov 19, 2015 4:49:16 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7465491 milliseconds
+Nov 19, 2015 4:49:16 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 4
+Nov 19, 2015 4:49:24 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7474295 milliseconds
+Nov 19, 2015 4:49:24 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 2
+Nov 19, 2015 4:49:31 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 7551877 milliseconds
+Nov 19, 2015 4:49:31 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: Data size is 2
+Nov 19, 2015 4:49:34 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: The #41 run is done
+Nov 19, 2015 4:49:34 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: RDD Only Holds One Line - End of This Branch of Search
+Nov 19, 2015 4:49:34 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+WARNING: Delta Debugged Error inducing inputs: [1685:95372_3,76196_1,2625420_1,724592_3,1602333_4,165698_3,380192_3,1141143_3,1272379_1,1563429_1,2048260_4,203113_2,1896000_2,1166912_2,788419_4,227076_2,2439493_1,2269039_2,2331444_4,2616407_2,399693_2,72543_5,1351769_3,1179658_3,745235_2,1876520_1,315027_1,2495881_3,683719_5,496436_1,13347_1,767958_4,1626727_2,83945_1,2537543_1,2083367_3,1664010_3,1190302_4,1565987_4,2559624_3,1895096_2,662993_1,71594_2,427609_2,475881_2,798296_1,1298475_3,953916_5,1030797_4,305344_3,364208_3,1474508_3,789666_4,2479307_1,950421_1,2321963_3,2158747_2,2274015_4,752642_1,273989_4,1722054_5,1447463_2,2118461_3,387418_3,1029163_1,974375_3,1932594_1,356615_1,1342551_3,1639792_1,2502873_4,2349702_3,1197588_2,2226332_2]
+Nov 19, 2015 4:49:34 PM DD$$anonfun$dd_helper$1 apply$mcV$sp
+INFO: This run takes 2605105 milliseconds
+Nov 19, 2015 4:49:34 PM Histogram_Movies$ main
+INFO: This job started at 2015-11-19 16:43:55.921
+Nov 19, 2015 4:49:34 PM Histogram_Movies$ main
+INFO: This job finished at 2015-11-19 16:49:34.317
+Nov 19, 2015 4:49:34 PM Histogram_Movies$ main
+INFO: The job took 338390 milliseconds to finish
